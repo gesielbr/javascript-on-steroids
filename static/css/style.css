@@ -1,20 +1,26 @@
-.container-1{
-    border: 3px solid coral;
+.container-1 {
+  /* border: 3px solid coral; */
 }
 
 .flex-box-container-1 {
   display: flex;
-  background-color: cornflowerblue;
+  border: 2px solid #007bff;
   padding: 10px;
   flex-wrap: wrap;
   flex-direction: row;
   /* flex-direction: column; */
   justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
 }
 
-.flex-box-container-1 div{
-    display: flex;
-    padding: 10px;
-    border: 1px solid black;
-    align-items: center;
+.flex-box-container-1:nth-child(2){
+  margin-bottom: 1rem;
+}
+
+.flex-box-container-1 div {
+  display: flex;
+  padding: 10px;
+  /* border: 1px solid black; */
+  align-items: center;
 }
