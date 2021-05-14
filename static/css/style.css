@@ -24,3 +24,16 @@
   /* border: 1px solid black; */
   align-items: center;
 }
+
+
+.container-2{
+  border: 1px solid red;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flex-box-container-2{
+  display: flex;
+  background-color: seagreen;
+  border: 1 px solid blue;
+}
