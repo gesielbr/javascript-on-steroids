@@ -16,7 +16,7 @@
       <div class="container-1">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2>Desafio 1: Sua idade em dias</h2>
+            <h2 class="mt-3">Desafio 1: Sua idade em dias</h2>
           </div>
         </div>
         <div class="flex-box-container-1">
@@ -39,8 +39,14 @@
       <div class="container-2">
         <div class="row">
           <div class="col-md-12">
-            <h2>Challenge 2: Cat Generator</h2>
-            <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Criar gato</button>
+            <h2 class="my-4">Challenge 2: Cat Generator</h2>
+            <button
+              class="btn btn-success"
+              id="cat-generator"
+              onclick="generateCat()"
+            >
+              Criar gato
+            </button>
           </div>
         </div>
         <div class="row">
@@ -58,6 +64,48 @@
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <div class="container-3">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h2 class="my-4">Challenge 3: Pedra, Papel, Tesoura</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="flex-box-rps" id="flex-box-rps-div">
+              <img
+                id="rock"
+                src="static/img/rock.png"
+                height="150"
+                width="150"
+                alt=""
+                onclick="rpsGame(this)"
+              />
+              <img
+                id="paper"
+                src="static/img/paper.jpg"
+                height="150"
+                width="150"
+                alt=""
+                onclick="rpsGame(this)"
+              />
+              <img
+                id="scissors"
+                src="static/img/scissors.png"
+                height="150"
+                width="150"
+                alt=""
+                onclick="rpsGame(this)"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="static/js/script.js"></script>
   </body>
 </html>
