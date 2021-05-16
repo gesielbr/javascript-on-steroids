@@ -71,7 +71,7 @@ function finalMessage([yourScore, computerScore]) {
   }
 }
 
-function rpsFrontEnd(humanImageChoice, computerImageChoice, finalMessage) {
+function rpsFrontEnd(humanImageChoice, botImageChoice, finalMessage) {
   var imagesDataBase = {
     'pedra' : document.getElementById('pedra').src,
     'papel' : document.getElementById('papel').src,
@@ -89,8 +89,10 @@ function rpsFrontEnd(humanImageChoice, computerImageChoice, finalMessage) {
   var messageDiv = document.createElement('div');
 
   humanDiv.innerHTML = "<img src='" + imagesDataBase[humanImageChoice] + "' heigth=150 width=150 style='box-shadow: 0px 10px 50px rgba(37, 50, 233,1);'>";
+  botDiv.innerHTML = "<img src='" + imagesDataBase[botImageChoice] + "' heigth=150 width=150 style='box-shadow: 0px 10px 50px rgba(243, 38, 24,1);'>";
 
   document.getElementById('flex-box-rps-div').appendChild(humanDiv);
+  document.getElementById('flex-box-rps-div').appendChild(botDiv);
 
 
 }
