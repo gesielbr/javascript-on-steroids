@@ -27,13 +27,17 @@ function generateCat() {
 function rpsGame(yourChoice) {  
   var humanChoice, botChoice;
   humanChoice = yourChoice.id;
+
   botChoice = numberToChoice(randToRpsInt());
   console.log("Você escolheu: ", yourChoice.id);
   console.log("Computador escolheu: ", botChoice);
+  
   results = decideWinner(humanChoice, botChoice); //[0,1] human lost | bot won, for exemple
   console.log(results);
-  // message = finalMessage(results); // {'message' : 'Você venceu', 'color' : 'green'}
-  // rpsFront = (yourChoice.id, botChoice, message);
+
+  message = finalMessage(results); // {'message' : 'Você venceu', 'color' : 'green'}
+  console.log(message);
+  rpsFrontEnd(yourChoice.id, botChoice, message);
 }
 
 function randToRpsInt() {
@@ -56,4 +60,31 @@ function decideWinner(yourChoice, computerChoice) {
 
   return [yourScore, computerScore];
 }
-// 3:19
+
+function finalMessage([yourScore, computerScore]) {
+  if(yourScore === 0){
+    return {'message': 'Você perdeu!', 'color' : 'red'};  
+  } else if (yourScore === 0.5) { 
+    return  {'message' : 'Você empatou', 'color' : 'yellow'};
+  }else{
+    return  {'message': 'Você venceu', 'color': 'green'};
+  }
+}
+
+function rpsFrontEnd(humanImageChoice, computerImageChoice, finalMessage) {
+  var imagesDataBase = {
+    'pedra' : document.getElementById('pedra').src,
+    'papel' : document.getElementById('papel').src,
+    'tesoura' : document.getElementById('tesoura').src
+  }
+
+  // lets remove all the images
+  document.getElementById('pedra').remove();
+  document.getElementById('papel').remove();
+  document.getElementById('tesoura').remove();
+}
+// 3:40
+
+
+
+  
