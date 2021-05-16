@@ -34,5 +34,5 @@ function rpsGame(yourChoice) {
 }
 
 function randToRpsInt() {
-  
+  return Math.floor(Math.random()* 3);
 }
