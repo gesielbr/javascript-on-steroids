@@ -98,7 +98,7 @@ function rpsFrontEnd(humanImageChoice, botImageChoice, finalMessage) {
 
 
 }
-// 3:46
+// 3:58
 
 
 
