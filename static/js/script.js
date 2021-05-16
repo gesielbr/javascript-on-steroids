@@ -82,8 +82,19 @@ function rpsFrontEnd(humanImageChoice, computerImageChoice, finalMessage) {
   document.getElementById('pedra').remove();
   document.getElementById('papel').remove();
   document.getElementById('tesoura').remove();
+
+
+  var humanDiv = document.createElement('div');
+  var botDiv = document.createElement('div');
+  var messageDiv = document.createElement('div');
+
+  humanDiv.innerHTML = "<img src='" + imagesDataBase[humanImageChoice] + "'>";
+
+  document.getElementById('flex-box-rps-div').appendChild(humanDiv);
+
+
 }
-// 3:40
+// 3:46
 
 
 
