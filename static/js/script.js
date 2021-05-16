@@ -28,10 +28,11 @@ function rpsGame(yourChoice) {
   console.log(yourChoice);
   var humanChoice, botChoice;
   // humanChoice = humanChoice.id;
-  // botChoice = ;
+  botChoice = numberToChoice(randToRpsInt());
+  alert(botChoice);
   //results = decideWinner(humanChoice, botChoice); //[0,1] human lost | bot won, for exemple
-  message = finalMessage(results); // {'message' : 'Você venceu', 'color' : 'green'}
-  rpsFront = (yourChoice.id, botChoice, message);
+  // message = finalMessage(results); // {'message' : 'Você venceu', 'color' : 'green'}
+  // rpsFront = (yourChoice.id, botChoice, message);
 }
 
 function randToRpsInt() {
