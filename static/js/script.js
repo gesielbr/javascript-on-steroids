@@ -24,12 +24,12 @@ function generateCat() {
 }
 
 //Challenge 3: Pedra Papel Tesoura
-function rpsGame(yourChoice) {
-  console.log(yourChoice);
+function rpsGame(yourChoice) {  
   var humanChoice, botChoice;
   humanChoice = yourChoice.id;
   botChoice = numberToChoice(randToRpsInt());
-  console.log("Computer Choice: ", botChoice);
+  console.log("Você escolheu: ", yourChoice.id);
+  console.log("Computador escolheu: ", botChoice);
   results = decideWinner(humanChoice, botChoice); //[0,1] human lost | bot won, for exemple
   console.log(results);
   // message = finalMessage(results); // {'message' : 'Você venceu', 'color' : 'green'}
