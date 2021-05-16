@@ -27,10 +27,11 @@ function generateCat() {
 function rpsGame(yourChoice) {
   console.log(yourChoice);
   var humanChoice, botChoice;
-  // humanChoice = humanChoice.id;
+  humanChoice = yourChoice.id;
   botChoice = numberToChoice(randToRpsInt());
-  alert(botChoice);
-  //results = decideWinner(humanChoice, botChoice); //[0,1] human lost | bot won, for exemple
+  console.log("Computer Choice: ", botChoice);
+  results = decideWinner(humanChoice, botChoice); //[0,1] human lost | bot won, for exemple
+  console.log(results);
   // message = finalMessage(results); // {'message' : 'Você venceu', 'color' : 'green'}
   // rpsFront = (yourChoice.id, botChoice, message);
 }
@@ -40,5 +41,19 @@ function randToRpsInt() {
 }
 
 function numberToChoice(number) {
-  return ["rock", "paper", "scissors"][number];
+  return ["pedra", "papel", "tesoura"][number];
 }
+
+function decideWinner(yourChoice, computerChoice) {
+  var rpsDatabase = {
+    'pedra': { 'tesoura': 1, 'pedra': 0.5, 'papel': 0 },
+    'papel': { 'pedra': 1, 'papel': 0.5, 'tesoura': 0 },
+    'tesoura': { 'papel': 1, 'tesoura': 0.5, 'pedra': 0 },
+  };
+
+  var yourScore = rpsDatabase[yourChoice][computerChoice];
+  var computerScore = rpsDatabase[computerChoice][yourChoice];
+
+  return [yourScore, computerScore];
+}
+// 3:19
