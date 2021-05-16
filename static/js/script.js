@@ -18,14 +18,15 @@ function reset() {
 function generateCat() {
   var image = document.createElement("img");
   var div = document.getElementById("flex-cat-gen");
-  image.src = "http://thecatapi.com/api/images/get?fortmat=src&type=gif&size=small";
+  image.src =
+    "http://thecatapi.com/api/images/get?fortmat=src&type=gif&size=small";
   div.appendChild(image);
 }
 
 //Challenge 3: Pedra Papel Tesoura
 function rpsGame(yourChoice) {
   console.log(yourChoice);
-  var humanChoice, botChoice; 
+  var humanChoice, botChoice;
   // humanChoice = humanChoice.id;
   // botChoice = ;
   //results = decideWinner(humanChoice, botChoice); //[0,1] human lost | bot won, for exemple
@@ -34,5 +35,9 @@ function rpsGame(yourChoice) {
 }
 
 function randToRpsInt() {
-  return Math.floor(Math.random()* 3);
+  return Math.floor(Math.random() * 3);
+}
+
+function numberToChoice(number) {
+  return ["rock", "paper", "scissors"][number];
 }
