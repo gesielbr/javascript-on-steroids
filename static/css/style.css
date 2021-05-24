@@ -7,7 +7,8 @@
 
 .flex-box-container-1,
 .flex-box-container-2,
-.flex-box-rps {
+.flex-box-rps,
+.flex-box-pick-color {
   display: flex;
   padding: 10px;
   flex-wrap: wrap;

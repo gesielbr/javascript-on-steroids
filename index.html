@@ -70,6 +70,9 @@
         <div class="row text-center">
           <div class="col-md-12">
             <h2 class="my-4">Desafio 3: Pedra, Papel, Tesoura</h2>
+            <h4 class="my-4">
+              Escolha uma das figuas abaixo e comece a jogar!!
+            </h4>
           </div>
         </div>
 
@@ -100,6 +103,40 @@
                 alt=""
                 onclick="rpsGame(this)"
               />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-4">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h2 id="change-my-color">
+              Challange 4: Change the color of All Buttons
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="flex-box-pick-color">
+              <form action="">
+                <select
+                  name="backdrop"
+                  id="background"
+                  onchange="buttonColorChange(this)"
+                >
+                  <option value="random">Random</option>
+                  <option value="red">Red</option>
+                  <option value="green">Green</option>
+                  <option value="reset">Reset</option>
+                </select>
+              </form>
+              <button class="btn btn-primary">Wee!</button>
+              <button class="btn btn-danger">Yahoo!</button>
+              <button class="btn btn-warning">Google!</button>
+              <button class="btn btn-success">Facebook!</button>
             </div>
           </div>
         </div>
