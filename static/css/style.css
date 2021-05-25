@@ -53,6 +53,7 @@
 }
 
 .container-3 {
+  background-image: url('https://images.pexels.com/photos/220182/pexels-photo-220182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   color: #000000;
   background-color: #d2d2d5;
   border-radius: 20px;
@@ -61,4 +62,10 @@
 
 .flex-box-rps img:hover {
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+}
+
+.container-4{
+  background-image: url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
